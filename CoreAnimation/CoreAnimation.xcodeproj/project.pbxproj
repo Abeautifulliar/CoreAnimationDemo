@@ -15,6 +15,12 @@
 		7A8DCE9C1DACE2D800E3F6D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8DCE9A1DACE2D800E3F6D0 /* LaunchScreen.storyboard */; };
 		7A8DCEA71DACE2D800E3F6D0 /* CoreAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCEA61DACE2D800E3F6D0 /* CoreAnimationTests.m */; };
 		7A8DCEB21DACE2D800E3F6D0 /* CoreAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCEB11DACE2D800E3F6D0 /* CoreAnimationUITests.m */; };
+		7A8DCEC21DACE67000E3F6D0 /* CABasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCEC11DACE67000E3F6D0 /* CABasicAnimationViewController.m */; };
+		7A8DCEC51DACF2E400E3F6D0 /* CABasicAnimationPostionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCEC41DACF2E400E3F6D0 /* CABasicAnimationPostionViewController.m */; };
+		7A8DCEC81DACF34400E3F6D0 /* CABasicAnimationScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCEC71DACF34400E3F6D0 /* CABasicAnimationScaleViewController.m */; };
+		7A8DCECB1DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCECA1DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.m */; };
+		7A8DCECF1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCECE1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m */; };
+		7A8DCED11DAD09C900E3F6D0 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7A8DCED01DAD09C900E3F6D0 /* test.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,17 @@
 		7A8DCEAD1DACE2D800E3F6D0 /* CoreAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8DCEB11DACE2D800E3F6D0 /* CoreAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationUITests.m; sourceTree = "<group>"; };
 		7A8DCEB31DACE2D800E3F6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A8DCEC01DACE67000E3F6D0 /* CABasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationViewController.h; sourceTree = "<group>"; };
+		7A8DCEC11DACE67000E3F6D0 /* CABasicAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationViewController.m; sourceTree = "<group>"; };
+		7A8DCEC31DACF2E400E3F6D0 /* CABasicAnimationPostionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationPostionViewController.h; sourceTree = "<group>"; };
+		7A8DCEC41DACF2E400E3F6D0 /* CABasicAnimationPostionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationPostionViewController.m; sourceTree = "<group>"; };
+		7A8DCEC61DACF34400E3F6D0 /* CABasicAnimationScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationScaleViewController.h; sourceTree = "<group>"; };
+		7A8DCEC71DACF34400E3F6D0 /* CABasicAnimationScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationScaleViewController.m; sourceTree = "<group>"; };
+		7A8DCEC91DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationRotateViewController.h; sourceTree = "<group>"; };
+		7A8DCECA1DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationRotateViewController.m; sourceTree = "<group>"; };
+		7A8DCECD1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationRotationViewController.h; sourceTree = "<group>"; };
+		7A8DCECE1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationRotationViewController.m; sourceTree = "<group>"; };
+		7A8DCED01DAD09C900E3F6D0 /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +118,8 @@
 		7A8DCE8B1DACE2D800E3F6D0 /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				7A8DCEBF1DACE66100E3F6D0 /* CABasicAnimation */,
+				7A8DCECC1DACF91A00E3F6D0 /* CAKeyframeAnimation */,
 				7A8DCE8F1DACE2D800E3F6D0 /* AppDelegate.h */,
 				7A8DCE901DACE2D800E3F6D0 /* AppDelegate.m */,
 				7A8DCE921DACE2D800E3F6D0 /* ViewController.h */,
@@ -109,6 +128,7 @@
 				7A8DCE981DACE2D800E3F6D0 /* Assets.xcassets */,
 				7A8DCE9A1DACE2D800E3F6D0 /* LaunchScreen.storyboard */,
 				7A8DCE9D1DACE2D800E3F6D0 /* Info.plist */,
+				7A8DCED01DAD09C900E3F6D0 /* test.jpeg */,
 				7A8DCE8C1DACE2D800E3F6D0 /* Supporting Files */,
 			);
 			path = CoreAnimation;
@@ -138,6 +158,30 @@
 				7A8DCEB31DACE2D800E3F6D0 /* Info.plist */,
 			);
 			path = CoreAnimationUITests;
+			sourceTree = "<group>";
+		};
+		7A8DCEBF1DACE66100E3F6D0 /* CABasicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				7A8DCEC01DACE67000E3F6D0 /* CABasicAnimationViewController.h */,
+				7A8DCEC11DACE67000E3F6D0 /* CABasicAnimationViewController.m */,
+				7A8DCEC31DACF2E400E3F6D0 /* CABasicAnimationPostionViewController.h */,
+				7A8DCEC41DACF2E400E3F6D0 /* CABasicAnimationPostionViewController.m */,
+				7A8DCEC61DACF34400E3F6D0 /* CABasicAnimationScaleViewController.h */,
+				7A8DCEC71DACF34400E3F6D0 /* CABasicAnimationScaleViewController.m */,
+				7A8DCEC91DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.h */,
+				7A8DCECA1DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.m */,
+			);
+			path = CABasicAnimation;
+			sourceTree = "<group>";
+		};
+		7A8DCECC1DACF91A00E3F6D0 /* CAKeyframeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				7A8DCECD1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.h */,
+				7A8DCECE1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m */,
+			);
+			path = CAKeyframeAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +294,7 @@
 				7A8DCE9C1DACE2D800E3F6D0 /* LaunchScreen.storyboard in Resources */,
 				7A8DCE991DACE2D800E3F6D0 /* Assets.xcassets in Resources */,
 				7A8DCE971DACE2D800E3F6D0 /* Main.storyboard in Resources */,
+				7A8DCED11DAD09C900E3F6D0 /* test.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8DCECB1DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.m in Sources */,
+				7A8DCEC21DACE67000E3F6D0 /* CABasicAnimationViewController.m in Sources */,
+				7A8DCEC81DACF34400E3F6D0 /* CABasicAnimationScaleViewController.m in Sources */,
 				7A8DCE941DACE2D800E3F6D0 /* ViewController.m in Sources */,
 				7A8DCE911DACE2D800E3F6D0 /* AppDelegate.m in Sources */,
+				7A8DCECF1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m in Sources */,
 				7A8DCE8E1DACE2D800E3F6D0 /* main.m in Sources */,
+				7A8DCEC51DACF2E400E3F6D0 /* CABasicAnimationPostionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +562,7 @@
 				7A8DCEB81DACE2D800E3F6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A8DCEB91DACE2D800E3F6D0 /* Build configuration list for PBXNativeTarget "CoreAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +571,7 @@
 				7A8DCEBB1DACE2D800E3F6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A8DCEBC1DACE2D800E3F6D0 /* Build configuration list for PBXNativeTarget "CoreAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +580,7 @@
 				7A8DCEBE1DACE2D800E3F6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
