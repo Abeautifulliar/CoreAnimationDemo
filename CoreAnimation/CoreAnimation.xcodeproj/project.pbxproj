@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A159D601DAE597D007F2F71 /* CAKeyframeAnimationBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A159D5F1DAE597D007F2F71 /* CAKeyframeAnimationBezierPathViewController.m */; };
+		7A159D631DAE5A1C007F2F71 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A159D621DAE5A1C007F2F71 /* DrawView.m */; };
+		7A58F1681DAF755900EEB2D6 /* CAAnimationGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A58F1671DAF755900EEB2D6 /* CAAnimationGroupViewController.m */; };
+		7A58F16C1DAF787000EEB2D6 /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A58F16B1DAF787000EEB2D6 /* CALayerViewController.m */; };
 		7A8DCE8E1DACE2D800E3F6D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCE8D1DACE2D800E3F6D0 /* main.m */; };
 		7A8DCE911DACE2D800E3F6D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCE901DACE2D800E3F6D0 /* AppDelegate.m */; };
 		7A8DCE941DACE2D800E3F6D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCE931DACE2D800E3F6D0 /* ViewController.m */; };
@@ -41,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A159D5E1DAE597D007F2F71 /* CAKeyframeAnimationBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationBezierPathViewController.h; sourceTree = "<group>"; };
+		7A159D5F1DAE597D007F2F71 /* CAKeyframeAnimationBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationBezierPathViewController.m; sourceTree = "<group>"; };
+		7A159D611DAE5A1C007F2F71 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		7A159D621DAE5A1C007F2F71 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		7A58F1661DAF755900EEB2D6 /* CAAnimationGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationGroupViewController.h; sourceTree = "<group>"; };
+		7A58F1671DAF755900EEB2D6 /* CAAnimationGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationGroupViewController.m; sourceTree = "<group>"; };
+		7A58F16A1DAF787000EEB2D6 /* CALayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerViewController.h; sourceTree = "<group>"; };
+		7A58F16B1DAF787000EEB2D6 /* CALayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerViewController.m; sourceTree = "<group>"; };
 		7A8DCE891DACE2D800E3F6D0 /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8DCE8D1DACE2D800E3F6D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A8DCE8F1DACE2D800E3F6D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +107,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A58F1651DAF753000EEB2D6 /* CAAnimationGroup */ = {
+			isa = PBXGroup;
+			children = (
+				7A58F1661DAF755900EEB2D6 /* CAAnimationGroupViewController.h */,
+				7A58F1671DAF755900EEB2D6 /* CAAnimationGroupViewController.m */,
+			);
+			path = CAAnimationGroup;
+			sourceTree = "<group>";
+		};
+		7A58F1691DAF785400EEB2D6 /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				7A58F16A1DAF787000EEB2D6 /* CALayerViewController.h */,
+				7A58F16B1DAF787000EEB2D6 /* CALayerViewController.m */,
+			);
+			path = CATransaction;
+			sourceTree = "<group>";
+		};
 		7A8DCE801DACE2D800E3F6D0 = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +148,10 @@
 		7A8DCE8B1DACE2D800E3F6D0 /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				7A58F1691DAF785400EEB2D6 /* CATransaction */,
 				7A8DCEBF1DACE66100E3F6D0 /* CABasicAnimation */,
 				7A8DCECC1DACF91A00E3F6D0 /* CAKeyframeAnimation */,
+				7A58F1651DAF753000EEB2D6 /* CAAnimationGroup */,
 				7A8DCE8F1DACE2D800E3F6D0 /* AppDelegate.h */,
 				7A8DCE901DACE2D800E3F6D0 /* AppDelegate.m */,
 				7A8DCE921DACE2D800E3F6D0 /* ViewController.h */,
@@ -180,6 +212,10 @@
 			children = (
 				7A8DCECD1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.h */,
 				7A8DCECE1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m */,
+				7A159D5E1DAE597D007F2F71 /* CAKeyframeAnimationBezierPathViewController.h */,
+				7A159D5F1DAE597D007F2F71 /* CAKeyframeAnimationBezierPathViewController.m */,
+				7A159D611DAE5A1C007F2F71 /* DrawView.h */,
+				7A159D621DAE5A1C007F2F71 /* DrawView.m */,
 			);
 			path = CAKeyframeAnimation;
 			sourceTree = "<group>";
@@ -319,13 +355,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A159D601DAE597D007F2F71 /* CAKeyframeAnimationBezierPathViewController.m in Sources */,
 				7A8DCECB1DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.m in Sources */,
 				7A8DCEC21DACE67000E3F6D0 /* CABasicAnimationViewController.m in Sources */,
+				7A58F1681DAF755900EEB2D6 /* CAAnimationGroupViewController.m in Sources */,
 				7A8DCEC81DACF34400E3F6D0 /* CABasicAnimationScaleViewController.m in Sources */,
+				7A159D631DAE5A1C007F2F71 /* DrawView.m in Sources */,
 				7A8DCE941DACE2D800E3F6D0 /* ViewController.m in Sources */,
 				7A8DCE911DACE2D800E3F6D0 /* AppDelegate.m in Sources */,
 				7A8DCECF1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m in Sources */,
 				7A8DCE8E1DACE2D800E3F6D0 /* main.m in Sources */,
+				7A58F16C1DAF787000EEB2D6 /* CALayerViewController.m in Sources */,
 				7A8DCEC51DACF2E400E3F6D0 /* CABasicAnimationPostionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

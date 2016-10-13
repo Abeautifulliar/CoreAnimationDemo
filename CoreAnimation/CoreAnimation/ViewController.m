@@ -23,19 +23,22 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     _dataSource = @[
-                    @"CABasicAnimationPosition(基本动画)",
-                    @"CABasicAnimationScale(基本动画)",
-                    @"CABasicAnimationRotate(基本动画)",
-                    @"CAKeyframeAnimation(关键帧动画)",
-                    @"CAKeyframeAnimation(关键帧动画)",
-                    @"CAKeyframeAnimation(关键帧动画)"
+                    @"CABasicAnimationPosition(基本动画移动)",
+                    @"CABasicAnimationScale(基本动画缩放)",
+                    @"CABasicAnimationRotate(基本动画旋转)",
+                    @"CAKeyframeAnimation(关键帧动画抖动)",
+                    @"CAKeyframeAnimation(关键帧动画贝塞尔曲线)",
+                    @"CAAnimationGroup(组动画)",
+                    @"非根视图layer隐式动画"
                     ];
     _controllers = @[
                     @"CABasicAnimationPostionViewController",
                     @"CABasicAnimationScaleViewController",
                     @"CABasicAnimationRotateViewController",
                     @"CAKeyframeAnimationRotationViewController",
-                    @""
+                    @"CAKeyframeAnimationBezierPathViewController",
+                    @"CAAnimationGroupViewController",
+                    @"CALayerViewController"
                     ];
     
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -49,7 +52,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 70;
+    return 55;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -57,6 +60,7 @@
     if(!cell){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([UITableViewCell class])];
         cell.textLabel.text = _dataSource[indexPath.row];
+        cell.textLabel.font = [UIFont systemFontOfSize:15];
     }
     return cell;
 }

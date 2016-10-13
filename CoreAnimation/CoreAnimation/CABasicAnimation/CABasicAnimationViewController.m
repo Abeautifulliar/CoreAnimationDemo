@@ -25,7 +25,7 @@
     _animationView.hidden = YES;
     [self.view addSubview:_animationView];
     
-    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 200, 200)];
     _imageView.image = [UIImage imageNamed:@"test.jpeg"];
     _imageView.hidden = YES;
     [self.view addSubview:_imageView];
