@@ -25,6 +25,10 @@
 		7A8DCECB1DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCECA1DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.m */; };
 		7A8DCECF1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCECE1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m */; };
 		7A8DCED11DAD09C900E3F6D0 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7A8DCED01DAD09C900E3F6D0 /* test.jpeg */; };
+		7ABBBE601DC2F82C001434E8 /* CustomPresentAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABBBE5F1DC2F82C001434E8 /* CustomPresentAnimationController.m */; };
+		7ABBBE631DC2F8A5001434E8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABBBE621DC2F8A5001434E8 /* SecondViewController.m */; };
+		7ABBBE661DC2F9A8001434E8 /* ELButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABBBE651DC2F9A8001434E8 /* ELButton.m */; };
+		7AF0E47C1DC888DB00BFE4A8 /* ELTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0E47B1DC888DB00BFE4A8 /* ELTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,14 @@
 		7A8DCECD1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationRotationViewController.h; sourceTree = "<group>"; };
 		7A8DCECE1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationRotationViewController.m; sourceTree = "<group>"; };
 		7A8DCED01DAD09C900E3F6D0 /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
+		7ABBBE5E1DC2F82C001434E8 /* CustomPresentAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPresentAnimationController.h; sourceTree = "<group>"; };
+		7ABBBE5F1DC2F82C001434E8 /* CustomPresentAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPresentAnimationController.m; sourceTree = "<group>"; };
+		7ABBBE611DC2F8A5001434E8 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		7ABBBE621DC2F8A5001434E8 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		7ABBBE641DC2F9A8001434E8 /* ELButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELButton.h; sourceTree = "<group>"; };
+		7ABBBE651DC2F9A8001434E8 /* ELButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELButton.m; sourceTree = "<group>"; };
+		7AF0E47A1DC888DB00BFE4A8 /* ELTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTransition.h; sourceTree = "<group>"; };
+		7AF0E47B1DC888DB00BFE4A8 /* ELTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +160,7 @@
 		7A8DCE8B1DACE2D800E3F6D0 /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				7ABBBE5D1DC2F530001434E8 /* 转场动画 */,
 				7A58F1691DAF785400EEB2D6 /* CATransaction */,
 				7A8DCEBF1DACE66100E3F6D0 /* CABasicAnimation */,
 				7A8DCECC1DACF91A00E3F6D0 /* CAKeyframeAnimation */,
@@ -218,6 +231,21 @@
 				7A159D621DAE5A1C007F2F71 /* DrawView.m */,
 			);
 			path = CAKeyframeAnimation;
+			sourceTree = "<group>";
+		};
+		7ABBBE5D1DC2F530001434E8 /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				7ABBBE5E1DC2F82C001434E8 /* CustomPresentAnimationController.h */,
+				7ABBBE5F1DC2F82C001434E8 /* CustomPresentAnimationController.m */,
+				7ABBBE611DC2F8A5001434E8 /* SecondViewController.h */,
+				7ABBBE621DC2F8A5001434E8 /* SecondViewController.m */,
+				7ABBBE641DC2F9A8001434E8 /* ELButton.h */,
+				7ABBBE651DC2F9A8001434E8 /* ELButton.m */,
+				7AF0E47A1DC888DB00BFE4A8 /* ELTransition.h */,
+				7AF0E47B1DC888DB00BFE4A8 /* ELTransition.m */,
+			);
+			name = "转场动画";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,12 +386,16 @@
 				7A159D601DAE597D007F2F71 /* CAKeyframeAnimationBezierPathViewController.m in Sources */,
 				7A8DCECB1DACF5C400E3F6D0 /* CABasicAnimationRotateViewController.m in Sources */,
 				7A8DCEC21DACE67000E3F6D0 /* CABasicAnimationViewController.m in Sources */,
+				7ABBBE601DC2F82C001434E8 /* CustomPresentAnimationController.m in Sources */,
 				7A58F1681DAF755900EEB2D6 /* CAAnimationGroupViewController.m in Sources */,
+				7AF0E47C1DC888DB00BFE4A8 /* ELTransition.m in Sources */,
 				7A8DCEC81DACF34400E3F6D0 /* CABasicAnimationScaleViewController.m in Sources */,
 				7A159D631DAE5A1C007F2F71 /* DrawView.m in Sources */,
 				7A8DCE941DACE2D800E3F6D0 /* ViewController.m in Sources */,
+				7ABBBE661DC2F9A8001434E8 /* ELButton.m in Sources */,
 				7A8DCE911DACE2D800E3F6D0 /* AppDelegate.m in Sources */,
 				7A8DCECF1DAD086600E3F6D0 /* CAKeyframeAnimationRotationViewController.m in Sources */,
+				7ABBBE631DC2F8A5001434E8 /* SecondViewController.m in Sources */,
 				7A8DCE8E1DACE2D800E3F6D0 /* main.m in Sources */,
 				7A58F16C1DAF787000EEB2D6 /* CALayerViewController.m in Sources */,
 				7A8DCEC51DACF2E400E3F6D0 /* CABasicAnimationPostionViewController.m in Sources */,

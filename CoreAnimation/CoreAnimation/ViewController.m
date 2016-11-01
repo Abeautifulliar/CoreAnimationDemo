@@ -29,7 +29,8 @@
                     @"CAKeyframeAnimation(关键帧动画抖动)",
                     @"CAKeyframeAnimation(关键帧动画贝塞尔曲线)",
                     @"CAAnimationGroup(组动画)",
-                    @"非根视图layer隐式动画"
+                    @"非根视图layer隐式动画",
+                    @"转场动画"
                     ];
     _controllers = @[
                     @"CABasicAnimationPostionViewController",
@@ -38,7 +39,8 @@
                     @"CAKeyframeAnimationRotationViewController",
                     @"CAKeyframeAnimationBezierPathViewController",
                     @"CAAnimationGroupViewController",
-                    @"CALayerViewController"
+                    @"CALayerViewController",
+                    @"CustomPresentAnimationController"
                     ];
     
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
