@@ -8,17 +8,20 @@
 
 #import "ELButton.h"
 #define WeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self
+@interface ELButton ()
 
-@implementation ELButton{
-    CAShapeLayer *_whiteLayer;
-}
+@property (nonatomic, strong) CAShapeLayer *whiteLayer;
+
+@end
+
+@implementation ELButton
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         _whiteLayer = [[CAShapeLayer alloc] init];
-        CGFloat radius = CGRectGetHeight(frame) / 4;
-        _whiteLayer.frame = CGRectMake(0, 0, CGRectGetHeight(frame), CGRectGetHeight(frame));
-        CGPoint center = CGPointMake(CGRectGetHeight(frame)/2, CGRectGetHeight(frame)/2);
+        CGFloat radius = CGRectGetHeight(self.bounds) / 4;
+        _whiteLayer.frame = CGRectMake(0, 0, CGRectGetHeight(self.bounds), CGRectGetHeight(self.bounds));
+        CGPoint center = CGPointMake(CGRectGetHeight(self.bounds)/2, CGRectGetHeight(self.bounds)/2);
         CGFloat startAngle = 0 - M_PI_2;
         CGFloat endAngle = M_PI * 2 - M_PI_2;
         BOOL clockwise = true;
@@ -28,12 +31,12 @@
         _whiteLayer.lineWidth = 1;
         _whiteLayer.strokeEnd = 0.4;
         _whiteLayer.hidden = YES;
-        [self.layer addSublayer:_whiteLayer];
         
         [self initUI];
     }
     return self;
 }
+
 
 - (void)initUI{
     [self setBackgroundColor:[UIColor colorWithRed:1 green:0.f/255.0f blue:128.0f/255.0f alpha:1]];
@@ -56,6 +59,9 @@
 }
 
 - (void)animationWithScaleSmall{
+    self.whiteLayer.hidden = NO;
+    [self.layer addSublayer:_whiteLayer];
+    
     WeakSelf(ws);
     [UIView animateWithDuration:0.2
                           delay:0
@@ -66,8 +72,6 @@
                          ws.transform = CGAffineTransformMakeScale(1, 1);
                      } completion:nil];
     
-
-    
     CABasicAnimation *scaleAnimation = [CABasicAnimation animation];
     scaleAnimation.keyPath = @"bounds.size.width";
     scaleAnimation.fromValue = @(CGRectGetWidth(self.frame));
@@ -77,8 +81,6 @@
     scaleAnimation.removedOnCompletion = NO;
     [self.layer addAnimation:scaleAnimation forKey:nil];
 
-    
-    _whiteLayer.hidden = NO;
     CABasicAnimation *rotate = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotate.fromValue = 0;
     rotate.toValue = @(M_PI * 2);
@@ -93,8 +95,6 @@
 }
 
 - (void)addExpandAnimation{
-    [_whiteLayer removeAllAnimations];
-    [_whiteLayer removeFromSuperlayer];
     CABasicAnimation *expand = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     expand.fromValue = @(1.0);
     expand.toValue = @(33.0);
@@ -102,5 +102,11 @@
     expand.fillMode = kCAFillModeForwards;
     expand.removedOnCompletion = false;
     [self.layer addAnimation:expand forKey:nil];
+    [_whiteLayer removeFromSuperlayer];
+    [self performSelector:@selector(removeAllAnimation) withObject:nil afterDelay:1.5];
+}
+
+- (void)removeAllAnimation{
+    [self.layer removeAllAnimations];
 }
 @end

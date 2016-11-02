@@ -15,7 +15,9 @@
 
 @end
 
-@implementation CustomPresentAnimationController
+@implementation CustomPresentAnimationController{
+    ELButton *_presentButton;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,13 +27,12 @@
 
 - (void)initUI{
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    ELButton *presentButton = [[ELButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.frame)/2-100, CGRectGetHeight(self.view.frame)-200, 200, 50)];
-    presentButton.layer.masksToBounds = YES;
-    presentButton.layer.cornerRadius = 25;
-    [presentButton setBackgroundColor:[UIColor colorWithRed:1 green:0.f/255.0f blue:128.0f/255.0f alpha:1]];
-    [presentButton addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:presentButton];
+    _presentButton = [[ELButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.frame)/2-100, CGRectGetHeight(self.view.frame)-200, 200, 50)];
+    _presentButton.layer.masksToBounds = YES;
+    _presentButton.layer.cornerRadius = 25;
+    [_presentButton setBackgroundColor:[UIColor colorWithRed:1 green:0.f/255.0f blue:128.0f/255.0f alpha:1]];
+    [_presentButton addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_presentButton];
 }
 
 
@@ -42,6 +43,10 @@
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
+    return [[ELTransition alloc] init];
+}
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
     return [[ELTransition alloc] init];
 }
 
